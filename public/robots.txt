@@ -1,0 +1,10 @@
+# robots.txt para MontShop
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://montshop.com.br/sitemap.xml
+
+# Disallow admin pages if any
+# Disallow: /admin/
+
