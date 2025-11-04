@@ -1,13 +1,36 @@
+import dynamic from 'next/dynamic'
 import Hero from '@/components/Hero'
-import Features from '@/components/Features'
-import Benefits from '@/components/Benefits'
-import Screenshots from '@/components/Screenshots'
-import Pricing from '@/components/Pricing'
-import FAQ from '@/components/FAQ'
-import CTA from '@/components/CTA'
-import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
+
+// Lazy load componentes abaixo da dobra para reduzir First Load JS
+const Screenshots = dynamic(() => import('@/components/Screenshots'), {
+  loading: () => <div className="h-96" />, // Placeholder para evitar layout shift
+})
+
+const Benefits = dynamic(() => import('@/components/Benefits'), {
+  loading: () => <div className="h-96" />,
+})
+
+const Features = dynamic(() => import('@/components/Features'), {
+  loading: () => <div className="h-96" />,
+})
+
+const Pricing = dynamic(() => import('@/components/Pricing'), {
+  loading: () => <div className="h-96" />,
+})
+
+const FAQ = dynamic(() => import('@/components/FAQ'), {
+  loading: () => <div className="h-96" />,
+})
+
+const CTA = dynamic(() => import('@/components/CTA'), {
+  loading: () => <div className="h-32" />,
+})
+
+const Footer = dynamic(() => import('@/components/Footer'), {
+  loading: () => <div className="h-64" />,
+})
 
 export default function Home() {
   return (
