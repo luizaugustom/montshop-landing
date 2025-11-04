@@ -1,5 +1,9 @@
 import { NextResponse } from 'next/server'
 
+// Forçar rota dinâmica para evitar ISR
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
+
 export async function GET() {
   try {
     // Buscar releases do GitHub
@@ -9,8 +13,8 @@ export async function GET() {
         headers: {
           'Accept': 'application/vnd.github.v3+json',
         },
-        // Cache por 5 minutos para evitar muitas requisições
-        next: { revalidate: 300 }
+        // Remover cache no build time para evitar ISR
+        cache: 'no-store'
       }
     )
 
@@ -37,6 +41,10 @@ export async function GET() {
       version: release.tag_name,
       versionName: release.name,
       publishedAt: release.published_at,
+    }, {
+      headers: {
+        'Cache-Control': 'public, max-age=300, s-maxage=300', // Cache de 5 minutos
+      },
     })
   } catch (error) {
     console.error('Erro ao buscar release do GitHub:', error)

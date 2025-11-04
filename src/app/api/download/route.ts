@@ -1,5 +1,10 @@
 import { NextResponse } from 'next/server'
 
+// Forçar rota dinâmica para evitar ISR (Incremental Static Regeneration)
+// Isso previne que a Vercel tente fazer cache do arquivo binário grande
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
+
 export async function GET() {
   try {
     // Buscar releases do GitHub
@@ -9,7 +14,8 @@ export async function GET() {
         headers: {
           'Accept': 'application/vnd.github.v3+json',
         },
-        next: { revalidate: 300 }
+        // Remover cache no build time para evitar ISR
+        cache: 'no-store'
       }
     )
 
@@ -31,23 +37,12 @@ export async function GET() {
       )
     }
 
-    // Buscar o arquivo binário do GitHub
-    const fileResponse = await fetch(setupFile.browser_download_url)
-
-    if (!fileResponse.ok) {
-      throw new Error(`Erro ao baixar arquivo: ${fileResponse.status}`)
-    }
-
-    // Converter para buffer
-    const fileBuffer = await fileResponse.arrayBuffer()
-
-    // Retornar o arquivo com headers apropriados para forçar download
-    return new NextResponse(fileBuffer, {
+    // Redirecionar diretamente para o GitHub em vez de fazer proxy do arquivo
+    // Isso evita problemas com tamanho de arquivo e é mais eficiente
+    return NextResponse.redirect(setupFile.browser_download_url, {
+      status: 302,
       headers: {
-        'Content-Type': 'application/x-msdownload',
-        'Content-Disposition': `attachment; filename="${setupFile.name}"`,
-        'Content-Length': setupFile.size.toString(),
-        'Cache-Control': 'public, max-age=3600', // Cache de 1 hora
+        'Cache-Control': 'public, max-age=3600, s-maxage=3600', // Cache de 1 hora
       },
     })
   } catch (error) {
