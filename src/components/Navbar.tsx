@@ -8,6 +8,8 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [downloadUrl, setDownloadUrl] = useState<string | null>(null)
+  const [isLoadingDownload, setIsLoadingDownload] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +39,27 @@ export default function Navbar() {
     }
   }, [isModalOpen])
 
+  // Buscar link de download mais recente do GitHub
+  useEffect(() => {
+    const fetchDownloadUrl = async () => {
+      try {
+        setIsLoadingDownload(true)
+        const response = await fetch('/api/latest-release')
+        if (response.ok) {
+          const data = await response.json()
+          // Usar o endpoint de download direto ao invés do link do GitHub
+          setDownloadUrl('/api/download')
+        }
+      } catch (error) {
+        console.error('Erro ao buscar link de download:', error)
+      } finally {
+        setIsLoadingDownload(false)
+      }
+    }
+
+    fetchDownloadUrl()
+  }, [])
+
   const navItems = [
     { label: 'Recursos', href: '#recursos' },
     { label: 'Planos', href: '#planos' },
@@ -44,7 +67,7 @@ export default function Navbar() {
   ]
 
   // Link para a playlist do curso MontShop no YouTube
-  const courseLink = 'https://www.youtube.com/playlist?list=SUA_PLAYLIST_AQUI'
+  const courseLink = 'https://www.youtube.com/playlist?list=PLVRgzWLdnp7K9QqWLw_DXgiHU7bhyEInL'
 
   return (
     <nav
@@ -192,20 +215,34 @@ export default function Navbar() {
                 </a>
                 
                 <a
-                  href="#"
+                  href={downloadUrl || '#'}
                   onClick={(e) => {
-                    e.preventDefault()
-                    // Aqui você pode adicionar o link de download do desktop quando disponível
-                    alert('Link de download do desktop será adicionado em breve!')
+                    if (!downloadUrl) {
+                      e.preventDefault()
+                      alert('Carregando link de download...')
+                    }
                   }}
-                  className="flex items-center gap-4 p-4 border-2 border-gray-300 rounded-xl hover:bg-gray-50 hover:border-primary-600 transition-all group"
+                  download
+                  className={`flex items-center gap-4 p-4 border-2 rounded-xl transition-all group ${
+                    downloadUrl 
+                      ? 'border-gray-300 hover:bg-gray-50 hover:border-primary-600' 
+                      : 'border-gray-200 opacity-60 cursor-wait'
+                  }`}
                 >
                   <div className="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-primary-100 transition-colors">
-                    <Download className="text-gray-600 group-hover:text-primary-600" size={24} />
+                    {isLoadingDownload ? (
+                      <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-primary-600"></div>
+                    ) : (
+                      <Download className="text-gray-600 group-hover:text-primary-600" size={24} />
+                    )}
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900">Baixar Desktop</h3>
-                    <p className="text-sm text-gray-500">Instale e use no seu computador</p>
+                    <h3 className="font-semibold text-gray-900">
+                      {isLoadingDownload ? 'Carregando...' : 'Baixar Desktop'}
+                    </h3>
+                    <p className="text-sm text-gray-500">
+                      {isLoadingDownload ? 'Buscando versão mais recente...' : 'Instale e use no seu computador'}
+                    </p>
                   </div>
                 </a>
               </div>

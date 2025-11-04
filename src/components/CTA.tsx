@@ -4,7 +4,7 @@ import { ArrowRight, Check, PlayCircle } from 'lucide-react'
 
 export default function CTA() {
   // Link para a playlist do curso MontShop no YouTube
-  const courseLink = 'https://www.youtube.com/playlist?list=SUA_PLAYLIST_AQUI'
+  const courseLink = 'https://www.youtube.com/playlist?list=PLVRgzWLdnp7K9QqWLw_DXgiHU7bhyEInL'
   
   return (
     <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600">
