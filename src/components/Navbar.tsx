@@ -81,12 +81,15 @@ export default function Navbar() {
           <div className="flex items-center space-x-3">
             <Image 
               src="/logo.png" 
-              alt="MontShop Logo" 
+              alt="Sistema Montshop Logo" 
               width={40} 
               height={40}
               className="h-10 w-10 object-contain"
             />
-            <span className="text-2xl font-bold gradient-text">MontShop</span>
+            <span className="text-2xl font-bold">
+              <span className="text-gray-600">Sistema </span>
+              <span className="gradient-text">Montshop</span>
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -116,7 +119,7 @@ export default function Navbar() {
               <span>Curso Gratuito</span>
             </a>
             <a
-              href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no MontShop e gostaria de começar o teste gratuito de 7 dias.')}`}
+              href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no Sistema Montshop e gostaria de começar o teste gratuito de 7 dias.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all shadow-lg hover:shadow-xl"
@@ -167,7 +170,7 @@ export default function Navbar() {
               <span>Curso Gratuito</span>
             </a>
             <a
-              href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no MontShop e gostaria de começar o teste gratuito de 7 dias.')}`}
+              href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no Sistema Montshop e gostaria de começar o teste gratuito de 7 dias.')}`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}

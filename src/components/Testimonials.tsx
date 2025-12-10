@@ -8,7 +8,7 @@ export default function Testimonials() {
       name: 'Maria Silva',
       role: 'Dona de Boutique',
       location: 'São Paulo, SP',
-      content: 'O MontShop transformou completamente a gestão da minha loja. Consegui reduzir em 60% o tempo gasto com controle de estoque e as vendas aumentaram 35% em apenas 3 meses!',
+      content: 'O Sistema Montshop transformou completamente a gestão da minha loja. Consegui reduzir em 60% o tempo gasto com controle de estoque e as vendas aumentaram 35% em apenas 3 meses!',
       rating: 5,
       avatar: '👩‍💼',
     },
@@ -32,7 +32,7 @@ export default function Testimonials() {
       name: 'Carlos Oliveira',
       role: 'Dono de Supermercado',
       location: 'Curitiba, PR',
-      content: 'Testei vários sistemas antes do MontShop. Nenhum se compara em custo-benefício. É completo, rápido e está sempre evoluindo com novos recursos.',
+      content: 'Testei vários sistemas antes do Sistema Montshop. Nenhum se compara em custo-benefício. É completo, rápido e está sempre evoluindo com novos recursos.',
       rating: 5,
       avatar: '👨‍🍳',
     },
@@ -66,7 +66,7 @@ export default function Testimonials() {
             <span className="gradient-text">dizem sobre nós</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Mais de 5.000 lojistas confiam no MontShop para gerenciar seus negócios
+            Mais de 5.000 lojistas confiam no Sistema Montshop para gerenciar seus negócios
           </p>
           
           {/* Rating Summary */}

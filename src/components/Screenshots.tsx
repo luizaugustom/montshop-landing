@@ -802,7 +802,10 @@ export default function Screenshots() {
                 <div className="bg-gray-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 h-[400px] sm:h-[450px] md:h-[500px] flex flex-col">
                   {/* Mobile Header */}
                   <div className="flex items-center justify-between mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-gray-700">
-                    <span className="text-white font-bold text-sm sm:text-base">MontShop</span>
+                    <span className="text-white font-bold text-sm sm:text-base">
+                      <span className="text-gray-400">Sistema </span>
+                      <span className="text-white">Montshop</span>
+                    </span>
                     <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-400"></div>
                   </div>
 

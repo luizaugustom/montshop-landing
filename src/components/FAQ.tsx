@@ -9,7 +9,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'Como funciona o período de teste gratuito?',
-      answer: 'Você tem 7 dias para testar o MontShop gratuitamente, sem precisar cadastrar cartão de crédito. Durante esse período, você terá acesso completo a todos os recursos do plano escolhido. Se decidir continuar, basta fazer o cadastro do pagamento ao final do período de teste.',
+      answer: 'Você tem 7 dias para testar o Sistema Montshop gratuitamente, sem precisar cadastrar cartão de crédito. Durante esse período, você terá acesso completo a todos os recursos do plano escolhido. Se decidir continuar, basta fazer o cadastro do pagamento ao final do período de teste.',
     },
     {
       question: 'Posso mudar de plano depois?',
@@ -25,7 +25,7 @@ export default function FAQ() {
     },
     {
       question: 'Preciso instalar algum programa?',
-      answer: 'Não! O MontShop funciona 100% online através do navegador. Você também pode usar nosso aplicativo desktop e mobile para Android e iOS. Para impressoras térmicas não fiscais, você pode configurar uma impressora compartilhada na sua rede local.',
+      answer: 'Não! O Sistema Montshop funciona 100% online através do navegador. Você também pode usar nosso aplicativo desktop e mobile para Android e iOS. Para impressoras térmicas não fiscais, você pode configurar uma impressora compartilhada na sua rede local.',
     },
     {
       question: 'Como funciona o suporte?',
@@ -65,7 +65,7 @@ export default function FAQ() {
             Tire suas <span className="gradient-text">dúvidas</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
-            Tudo que você precisa saber sobre o MontShop
+            Tudo que você precisa saber sobre o Sistema Montshop
           </p>
         </div>
 

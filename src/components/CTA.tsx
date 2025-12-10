@@ -14,7 +14,7 @@ export default function CTA() {
             Pronto para transformar a gestão da sua loja?
           </h2>
           <p className="text-lg md:text-xl text-white/90 mb-6 max-w-3xl mx-auto">
-            Junte-se aos lojistas que já estão economizando tempo e aumentando suas vendas com o MontShop
+            Junte-se aos lojistas que já estão economizando tempo e aumentando suas vendas com o Sistema Montshop
           </p>
           
           {/* Partnership Message */}
@@ -47,7 +47,7 @@ export default function CTA() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
             <a
-              href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no MontShop e gostaria de começar o teste gratuito de 7 dias.')}`}
+              href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no Sistema Montshop e gostaria de começar o teste gratuito de 7 dias.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-white text-primary-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-100 transform hover:scale-105 transition-all shadow-2xl flex items-center justify-center gap-2"

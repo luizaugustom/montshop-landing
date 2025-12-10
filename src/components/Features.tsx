@@ -26,6 +26,21 @@ import {
 export default function Features() {
   const features = [
     {
+      icon: Globe,
+      title: '🌐 Catálogo Digital Público',
+      description: 'Transforme sua loja em uma vitrine online! Crie um catálogo digital público personalizado para seus clientes navegarem produtos, preços e estoques (PRO). Link único, busca e filtros avançados.',
+    },
+    {
+      icon: MessageCircle,
+      title: '💬 Mensagens Automáticas de Cobrança',
+      description: 'Sistema inteligente que envia mensagens WhatsApp automáticas quando vendas a prazo vencem (Plus/Pro). Configure mensagens personalizadas e aumente seu índice de recebimento.',
+    },
+    {
+      icon: Settings,
+      title: '🎨 100% Personalizável com sua Marca',
+      description: 'Use sua logo e as cores da sua empresa! Personalize completamente o visual do sistema, NFC-e, impressora e muito mais para refletir a identidade do seu negócio.',
+    },
+    {
       icon: ShoppingCart,
       title: 'PDV Completo',
       description: 'Sistema de ponto de venda rápido e intuitivo. Busque produtos por código de barras ou nome e finalize vendas em segundos.',
@@ -81,24 +96,9 @@ export default function Features() {
       description: 'Abertura e fechamento de caixa por vendedor com totalizadores, validação e relatórios.',
     },
     {
-      icon: MessageCircle,
-      title: '💬 Mensagens Automáticas de Cobrança',
-      description: 'Sistema inteligente que envia mensagens WhatsApp automáticas quando vendas a prazo vencem (Plus/Pro). Configure mensagens personalizadas e aumente seu índice de recebimento.',
-    },
-    {
-      icon: Globe,
-      title: '🌐 Catálogo Digital Público',
-      description: 'Transforme sua loja em uma vitrine online! Crie um catálogo digital público personalizado para seus clientes navegarem produtos, preços e estoques (PRO). Link único, busca e filtros avançados.',
-    },
-    {
       icon: Printer,
       title: 'Impressão de Cupons',
       description: 'Suporte para impressoras térmicas. Reimpressão de cupons fiscais e não fiscais.',
-    },
-    {
-      icon: ArrowUpDown,
-      title: 'Pedidos de Compra',
-      description: 'Cadastre produtos, fornecedores e gerencie pedidos de compra com controle completo.',
     },
     {
       icon: ClipboardList,
@@ -109,11 +109,6 @@ export default function Features() {
       icon: Bell,
       title: 'Notificações em Tempo Real',
       description: 'Receba alertas sobre vendas, estoque baixo, vencimentos e novidades do sistema.',
-    },
-    {
-      icon: Settings,
-      title: '🎨 100% Personalizável com sua Marca',
-      description: 'Use sua logo e as cores da sua empresa! Personalize completamente o visual do sistema, NFC-e, impressora e muito mais para refletir a identidade do seu negócio.',
     },
   ]
 

@@ -15,7 +15,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0">
-              Desenvolvido em parceria com donos de lojas, o MontShop é o sistema mais completo do mercado.
+              Desenvolvido em parceria com donos de lojas, o Sistema Montshop é o sistema mais completo do mercado.
               PDV completo, NFC-e automática, controle de estoque, comissões, parcelamento e muito mais.
             </p>
             
@@ -49,7 +49,7 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <a
-                href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no MontShop e gostaria de experimentar grátis por 7 dias.')}`}
+                href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no Sistema Montshop e gostaria de experimentar grátis por 7 dias.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-primary-700 transform hover:scale-105 transition-all shadow-xl hover:shadow-2xl flex items-center justify-center gap-2"
@@ -97,7 +97,10 @@ export default function Hero() {
                 <div className="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-6 mb-6">
                   <div className="flex items-center justify-between text-white mb-4">
                     <span className="text-sm font-semibold">Dashboard</span>
-                    <span className="text-2xl font-bold">MontShop</span>
+                    <span className="text-2xl font-bold">
+                      <span className="text-white/70">Sistema </span>
+                      <span className="text-white">Montshop</span>
+                    </span>
                   </div>
                   <div className="space-y-3">
                     <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3">

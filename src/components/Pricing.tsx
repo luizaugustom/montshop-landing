@@ -141,7 +141,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href={`https://wa.me/5548998482590?text=${encodeURIComponent(`Olá! Tenho interesse no plano ${plan.name} do MontShop e gostaria de começar o teste gratuito de 7 dias.`)}`}
+                href={`https://wa.me/5548998482590?text=${encodeURIComponent(`Olá! Tenho interesse no plano ${plan.name} do Sistema Montshop e gostaria de começar o teste gratuito de 7 dias.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`block w-full text-center py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base transition-all transform hover:scale-105 ${

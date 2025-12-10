@@ -127,12 +127,15 @@ export default function Footer() {
             <div className="flex items-center space-x-3 mb-4">
               <Image 
                 src="/logo.png" 
-                alt="MontShop Logo" 
+                alt="Sistema Montshop Logo" 
                 width={40} 
                 height={40}
                 className="h-10 w-10 object-contain"
               />
-              <span className="text-2xl font-bold text-white">MontShop</span>
+              <span className="text-2xl font-bold text-white">
+                <span className="text-gray-400">Sistema </span>
+                <span className="text-white">Montshop</span>
+              </span>
             </div>
             <p className="text-gray-400 mb-4">
               Sistema completo de gestão para lojas. Simplifique sua rotina e venda mais.
@@ -188,7 +191,7 @@ export default function Footer() {
             </ul>
             <div className="mt-6 sm:text-right">
               <a
-                href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no MontShop e gostaria de começar o teste gratuito de 7 dias.')}`}
+                href={`https://wa.me/5548998482590?text=${encodeURIComponent('Olá! Tenho interesse no Sistema Montshop e gostaria de começar o teste gratuito de 7 dias.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-primary-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-primary-700 transition-colors"
@@ -203,7 +206,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} MontShop. Todos os direitos reservados.
+              © {currentYear} Sistema Montshop. Todos os direitos reservados.
             </p>
             <div className="flex flex-wrap gap-6 text-sm">
               <a href="#" className="hover:text-primary-400 transition-colors">

@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'MontShop - Sistema Completo para Gestão de Lojas | PDV e Controle de Estoque',
+  title: 'Sistema Montshop - Sistema Completo para Gestão de Lojas | PDV e Controle de Estoque',
   description: 'Sistema completo de gestão para lojas com PDV, controle de estoque, emissão de nota fiscal eletrônica (NFC-e), relatórios completos e muito mais. Experimente grátis!',
   keywords: [
     'sistema para lojas',
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     'controle financeiro',
     'sistema para varejo'
   ],
-  authors: [{ name: 'MontShop' }],
-  creator: 'MontShop',
-  publisher: 'MontShop',
+  authors: [{ name: 'Sistema Montshop' }],
+  creator: 'Sistema Montshop',
+  publisher: 'Sistema Montshop',
   robots: 'index, follow',
   icons: {
     icon: [
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt_BR',
     url: 'https://montshop.com.br',
-    title: 'MontShop - Sistema Completo para Gestão de Lojas',
+    title: 'Sistema Montshop - Sistema Completo para Gestão de Lojas',
     description: 'Sistema completo de gestão para lojas com PDV, controle de estoque, emissão de nota fiscal eletrônica (NFC-e), relatórios completos e muito mais.',
-    siteName: 'MontShop',
+    siteName: 'Sistema Montshop',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MontShop - Sistema Completo para Gestão de Lojas',
+    title: 'Sistema Montshop - Sistema Completo para Gestão de Lojas',
     description: 'Sistema completo de gestão para lojas com PDV, controle de estoque e emissão de NFC-e',
   },
   verification: {
@@ -92,7 +92,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'SoftwareApplication',
-              name: 'MontShop',
+              name: 'Sistema Montshop',
               applicationCategory: 'BusinessApplication',
               offers: {
                 '@type': 'AggregateOffer',
@@ -117,7 +117,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'MontShop',
+              name: 'Sistema Montshop',
               url: 'https://montshop.com.br',
               logo: 'https://montshop.com.br/logo.png',
               description: 'Sistema completo para gestão de lojas',

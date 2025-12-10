@@ -41,7 +41,7 @@ export default function Benefits() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Por que escolher o <span className="gradient-text">MontShop?</span>
+            Por que escolher o <span className="text-gray-600">Sistema </span><span className="gradient-text">Montshop?</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-4">
             O sistema mais completo do mercado, desenvolvido em parceria com donos de lojas
