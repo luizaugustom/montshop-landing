@@ -314,6 +314,6 @@ Antes de colocar o site no ar:
 ## 📞 Suporte
 
 Dúvidas sobre SEO?
-- Email: contato@montshop.com.br
+- Email: montsoftwares@gmail.com
 - Consulte: [Google SEO Starter Guide](https://developers.google.com/search/docs/beginner/seo-starter-guide)
 

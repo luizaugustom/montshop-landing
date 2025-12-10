@@ -379,7 +379,7 @@ Considere contratar ajuda profissional se:
 ## 📞 Suporte
 
 Dúvidas sobre configuração:
-- Email: contato@montshop.com.br
+- Email: montsoftwares@gmail.com
 
 ---
 

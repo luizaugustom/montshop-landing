@@ -209,13 +209,13 @@ export default function Footer() {
               © {currentYear} Sistema Montshop. Todos os direitos reservados.
             </p>
             <div className="flex flex-wrap gap-6 text-sm">
-              <a href="#" className="hover:text-primary-400 transition-colors">
+              <a href="/termos-de-uso" className="hover:text-primary-400 transition-colors">
                 Termos de Uso
               </a>
-              <a href="#" className="hover:text-primary-400 transition-colors">
+              <a href="/politica-de-privacidade" className="hover:text-primary-400 transition-colors">
                 Política de Privacidade
               </a>
-              <a href="#" className="hover:text-primary-400 transition-colors">
+              <a href="/politica-de-privacidade#cookies" className="hover:text-primary-400 transition-colors">
                 Cookies
               </a>
             </div>

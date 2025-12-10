@@ -37,7 +37,7 @@ NEXT_PUBLIC_GOOGLE_ADS_ID=AW-XXXXXXXXXX
 NEXT_PUBLIC_SITE_URL=https://montshop.com.br
 
 # Email de Contato
-NEXT_PUBLIC_CONTACT_EMAIL=contato@montshop.com.br
+NEXT_PUBLIC_CONTACT_EMAIL=montsoftwares@gmail.com
 
 # Verificação Google Search Console
 NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=seu-codigo-aqui
@@ -362,6 +362,6 @@ sudo nginx -t
 ## 📞 Suporte
 
 Para dúvidas:
-- Email: contato@montshop.com.br
+- Email: montsoftwares@gmail.com
 - Documentação: README.md
 

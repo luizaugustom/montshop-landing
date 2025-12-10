@@ -167,7 +167,7 @@ Edite `src/components/Pricing.tsx` para alterar os planos.
 
 - 📖 Leia o [README.md](README.md) completo
 - 🚀 Veja o [DEPLOY.md](DEPLOY.md) para publicar o site
-- 💌 Email: contato@montshop.com.br
+- 💌 Email: montsoftwares@gmail.com
 
 ## ✅ Próximos Passos
 

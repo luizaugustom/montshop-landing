@@ -234,7 +234,7 @@ npm run build
 ## 📞 Suporte
 
 Dúvidas ou problemas?
-- 📧 Email: contato@montshop.com.br
+- 📧 Email: montsoftwares@gmail.com
 - 📖 Documentação: Veja os arquivos .md
 
 ---

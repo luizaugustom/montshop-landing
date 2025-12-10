@@ -124,7 +124,7 @@ export default function RootLayout({
               contactPoint: {
                 '@type': 'ContactPoint',
                 contactType: 'Vendas',
-                email: 'contato@montshop.com.br',
+                email: 'montsoftwares@gmail.com',
               },
             }),
           }}

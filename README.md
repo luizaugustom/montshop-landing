@@ -147,7 +147,7 @@ montshop-landing/
 ## 🤝 Suporte
 
 Para dúvidas ou suporte:
-- Email: contato@montshop.com.br
+- Email: montsoftwares@gmail.com
 - Website: https://montshop.com.br
 
 ## 📄 Licença
